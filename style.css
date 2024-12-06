@@ -1,0 +1,291 @@
+
+.navbar {
+    background-color: #87CEEB; /* رنگ پس‌زمینه آبی آسمانی */
+    border: 2px solid black; /* حاشیه مشکی */
+    border-radius: 5px; /* لبه‌های گرد */
+    padding: 10px 20px; /* فاصله داخلی */
+    display: flex; /* چیدمان افقی */
+    justify-content: space-between; /* فاصله بین آیتم‌ها */
+    align-items: center; /* تراز وسط */
+    font-family: 'Poppins', sans-serif; /* فونت Poppins */
+}
+
+.navbar a {
+    text-decoration: none; /* حذف زیرخط لینک‌ها */
+    color: rgb(5, 0, 0); /* رنگ متن سفید */
+    font-size: 16px; /* اندازه فونت */
+    margin: 0 10px; /* فاصله بین آیتم‌ها */
+    transition: color 0.3s; /* افکت هاور */
+}
+
+.navbar a:hover {
+    color: rgb(244, 241, 241); /* تغییر رنگ متن به مشکی در هاور */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.weather-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    
+}
+
+.weather-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #333;
+}
+
+
+.weather-card img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 25px;
+
+}
+
+.weather-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+:root {
+    --color-light: #87CEEB; /* آبی آسمانی */
+    --color-dark: #003366;  /* آبی تیره */
+    --color-signal: #00BFFF; /* آبی فیروزه‌ای */
+    
+    --color-background: var(--color-light);
+    --color-text: var(--color-dark);
+    --color-accent: var(--color-signal);
+    
+    --size-bezel: .3rem; /* کاهش فاصله‌ها */
+    --size-radius: 3px;  /* گوشه‌های گرد کوچک‌تر */
+    
+    line-height: 1.4;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.6rem + .3vw); /* اندازه فونت کوچک‌تر */
+    color: var(--color-text);
+    background: var(--color-background);
+    font-weight: 300;
+    padding: 0 calc(var(--size-bezel) * 2);
+  }
+  
+  .card {
+    background: var(--color-background);
+    padding: calc(3 * var(--size-bezel));
+    margin-top: calc(2 * var(--size-bezel));
+    border-radius: var(--size-radius);
+    border: 2px solid var(--color-shadow, currentColor);
+    box-shadow: .3rem .3rem 0 var(--color-shadow, currentColor);
+  }
+  
+  .input {
+    position: relative;
+    margin-top: calc(var(--size-bezel) * 1.5);
+    
+    &__label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+      margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+      background: var(--color-background);
+      white-space: nowrap;
+      transform: translate(0, 0);
+      transform-origin: 0 0;
+      transition: transform 120ms ease-in;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+    
+    &__field {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border: 2px solid currentColor;
+      padding: calc(var(--size-bezel) * 1.25) var(--size-bezel);
+      color: currentColor;
+      background: transparent;
+      border-radius: var(--size-radius);
+      
+      &:focus,
+      &:not(:placeholder-shown) {
+        & + .input__label {
+          transform: translate(.25rem, -65%) scale(.8);
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+  
+  .button-group {
+    margin-top: calc(var(--size-bezel) * 1.5);
+  }
+  
+  button {
+    color: var(--color-light);
+    padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+    background: var(--color-accent);
+    border: none;
+    border-radius: var(--size-radius);
+    font-weight: 900;
+    
+    &[type=reset]{
+      background: var(--color-background);
+      font-weight: 200;
+    } 
+  }
+  
+  button + button {
+    margin-left: calc(var(--size-bezel) * 2);
+  }
+  
+  :root {
+    --color-light: #87CEEB; /* آبی آسمانی */
+    --color-dark: #003366;  /* آبی تیره */
+    --color-signal: #00BFFF; /* آبی فیروزه‌ای */
+    
+    --color-background: var(--color-light);
+    --color-text: var(--color-dark);
+    --color-accent: var(--color-signal);
+    
+    --size-bezel: .3rem; /* کاهش فاصله‌ها */
+    --size-radius: 3px;  /* گوشه‌های گرد کوچک‌تر */
+    
+    line-height: 1.4;
+    
+    font-family: 'Poppins', sans-serif; /* تغییر فونت به Poppins */
+    font-size: calc(.6rem + .3vw); /* اندازه فونت کوچک‌تر */
+    color: var(--color-text);
+    background: var(--color-background);
+    font-weight: 300;
+    padding: 0 calc(var(--size-bezel) * 2);
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600; /* برای هدینگ‌ها وزن فونت بیشتر */
+  }
+  
+  mark {
+    background: var(--color-accent);
+    color: var(--color-text);
+    font-weight: bold;
+    padding: 0 0.2em;
+  }
+  
+  .card {
+    background: #ddf0f9;
+    padding: calc(3 * var(--size-bezel));
+    margin-top: calc(2 * var(--size-bezel));
+    border-radius: var(--size-radius);
+    border: 2px solid var(--color-shadow, currentColor);
+    box-shadow: .3rem .3rem 0 var(--color-shadow, currentColor);
+  }
+  
+  .input {
+    position: relative;
+    margin-top: calc(var(--size-bezel) * 1.5);
+    
+    &__label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+      margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+      background: var(--color-background);
+      white-space: nowrap;
+      transform: translate(0, 0);
+      transform-origin: 0 0;
+      transition: transform 120ms ease-in;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+    
+    &__field {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border: 2px solid currentColor;
+      padding: calc(var(--size-bezel) * 1.25) var(--size-bezel);
+      color: currentColor;
+      background: transparent;
+      border-radius: var(--size-radius);
+      
+      &:focus,
+      &:not(:placeholder-shown) {
+        & + .input__label {
+          transform: translate(.25rem, -65%) scale(.8);
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+  
+  .button-group {
+    margin-top: calc(var(--size-bezel) * 1.5);
+  }
+  
+  button {
+    color: var(--color-light);
+    padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+    background: var(--color-accent);
+    border: none;
+    border-radius: var(--size-radius);
+    font-weight: 900;
+    
+    &[type=reset]{
+      background: var(--color-background);
+      font-weight: 200;
+    } 
+  }
+  
+  button + button {
+    margin-left: calc(var(--size-bezel) * 2);
+  }
+  
+  button[type="reset"] {
+    color: #000000;  /* تغییر رنگ متن دکمه به مشکی */
+  }
+
+  button[type="getWeather"] {
+    color: #000000;
+  }
+

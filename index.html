@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <a href="#home"><b>Home</b></a>
+        <a href="#forecast"><b>Weather Forecast</b></a>
+        <a href="#about"><b>About Me</b></a>
+        <a href="#contact"><b>Contact US</b></a>
+    </div>
+
+
+      
+    <div class="weather-container">
+        <h1>Weather forecast</h1>
+        <h2 id="location">Tehran</h2>
+        <div class="weather-cards">
+            <div class="weather-card">
+                <h3>Monday</h3>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny">
+                <p>27°C</p>
+                <p>Sunny</p>
+            </div>
+            <div class="weather-card">
+                <h3>Tuesday</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Partly Cloudy">
+                <p>25°C</p>
+                <p>Half cloudy</p>
+            </div>
+            <div class="weather-card">
+                <h3>Wednesday</h3>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Rainy">
+                <p>19°C</p>
+                <p>Rainy</p>
+            </div>
+            <div class="weather-card">
+                <h3>Thursday</h3>
+                <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Cloudy">
+                <p>22°C</p>
+                <p>Cloudy</p>
+            </div>
+            <div class="weather-card">
+                <h3>Friday</h3>
+                <img src="https://openweathermap.org/img/wn/11d@2x.png" alt="Thunderstorm">
+                <p>18°C</p>
+                <p>Stormy</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <article class="l-design-width">
+        <h1>Weather Forecast</h1>
+        <p>Enter the city name to check the weather:</p>
+      
+        <div class="card">
+            <h2>City Name</h2>
+            <label class="input">
+                <input class="input__field" type="text" id="cityInput" placeholder="Enter city..." />
+                <br>
+                </br>
+                
+            </label>
+            <div class="button-group">
+                <button type="getWeather" onclick="getWeather()">Get Weather</button>
+                <button  type="reset" onclick="resetForm()"><b>Submit</b></button>
+            </div>
+        </div>
+    </article>
+    <br />
+
+
+
+</body>
+</html>
+
